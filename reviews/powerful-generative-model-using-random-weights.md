@@ -2,7 +2,7 @@
  
 * [arxiv](https://arxiv.org/abs/1606.04801)
 * *No available implementation*
-
+* Deep texture [code](https://github.com/leongatys/DeepTextures) from Gatys et al. 2015 ([paper](https://arxiv.org/abs/1505.07376)) 
 
 ## TLDR
 
