@@ -1,4 +1,4 @@
-# Title of papers
+# Texture Synthesis Using Convolutional Neural Networks
 
 > [link](https://arxiv.org/pdf/1505.07376.pdf)
 
