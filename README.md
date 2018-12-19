@@ -23,3 +23,17 @@ To use the virtual environment: ``source activate ima``
 To install a custom kernel in jupyter lab/notebook: ``ipython kernel install --user --name=ima``
 
 To work on Jupyter notebook or Jupyter lab you will need to install it via pip. Follow the instructions [here](https://anbasile.github.io/programming/2017/06/25/jupyter-venv/) to make the environment kernel available in your jupyter installation.
+
+## Docker instructions to run Gatys code
+
+See detailed [issue](https://github.com/leongatys/DeepTextures/issues/7)
+
+1. Install Docker: https://docs.docker.com/engine/installation/
+2. ``sudo docker pull leongatys/caffe-cpu`` (download the image)
+3. Download the code (``git clone https://github.com/leongatys/DeepTextures.git``)
+4. Download the fully trained VGG network: http://bethgelab.org/media/uploads/deeptextures/vgg_normalised.caffemodel
+5. Start a notebook server in the docker container: ``sudo docker run -v $HOME:/home -p 8888:8888 -d leongatys/caffe-cpu jupyter-notebook``
+6. Check the docker container IP: ``sudo docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' <docker_id>`` where ``docker_id`` is given at the end of the previous command or by ``sudo docker container ls -aq``
+7. Go to the browser and type in the IP with port 8888 (``<output_IP>:8888``)
+8. You can play with the existing notebook and/or create your own.
+9. To stop the docker container: ``sudo docker container stop <container_hash>``
