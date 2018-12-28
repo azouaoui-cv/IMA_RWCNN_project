@@ -1,3 +1,10 @@
+# Personal notes
+perso_notes.md
+
+# Results and image folders
+results/
+examples/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
