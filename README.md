@@ -8,7 +8,7 @@ Our goal is to reproduce the method from the [texture synthesis using random fil
 ## Contents
 
 * [reviews](./reviews)
-* [models](./models)
+* Final_Notebook.ipynb contains the code used to produce the report results. It is a notebook meant to be run in Google Colaboratory, hence it might need a few tweaks to run properly on a local instance.
 
 ## Requirements
 
@@ -23,8 +23,9 @@ To use the virtual environment: ``source activate ima``
 To install a custom kernel in jupyter lab/notebook: ``ipython kernel install --user --name=ima``
 
 To work on Jupyter notebook or Jupyter lab you will need to install it via pip. Follow the instructions [here](https://anbasile.github.io/programming/2017/06/25/jupyter-venv/) to make the environment kernel available in your jupyter installation.
+## Old
 
-## Docker instructions to run Gatys code
+### Docker instructions to run Gatys code
 
 See detailed [issue](https://github.com/leongatys/DeepTextures/issues/7)
 
